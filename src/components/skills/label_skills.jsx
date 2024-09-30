@@ -6,13 +6,13 @@ import Hab from "./hab";
 export default function Label_skills () {
 
     const items_list = [ //todas as habilidades
-        { i: 0, src: "/icons/js.svg", alt: "Logo do Javascript", description: "Javascript"},
-        { i: 1, src: "/icons/python.svg", alt: "Logo do Python", description: "Python"},
-        { i: 2, src: "/icons/sql.svg", alt: "Logo do sql", description: "SQL"},
-        { i: 3, src: "/icons/html.svg", alt: "Logo do HTML", description: "HTML"},
-        { i: 4, src: "/icons/css.svg", alt: "Logo do CSS",  description: "CSS"},
-        { i: 5, src: "/icons/react.svg", alt: "Logo do React", description: "React"},
-        { i: 6, src: "/icons/figma.svg", alt: "Logo do figma", description: "Figma"}
+        { i: 0, src: "./icons/js.svg", alt: "Logo do Javascript", description: "Javascript"},
+        { i: 1, src: "./icons/python.svg", alt: "Logo do Python", description: "Python"},
+        { i: 2, src: "./icons/sql.svg", alt: "Logo do sql", description: "SQL"},
+        { i: 3, src: "./icons/html.svg", alt: "Logo do HTML", description: "HTML"},
+        { i: 4, src: "./icons/css.svg", alt: "Logo do CSS",  description: "CSS"},
+        { i: 5, src: "./icons/react.svg", alt: "Logo do React", description: "React"},
+        { i: 6, src: "./icons/figma.svg", alt: "Logo do figma", description: "Figma"}
     ];
 
     const [itens_currents, fun_itens_currents] = useState([ //habilidades mostradas na tela
@@ -164,7 +164,7 @@ export default function Label_skills () {
     return (
 
         <>
-            <img src="images/arrow_skills.png" className={styles.group_arrows} id={styles.arrow_1} onClick={() => image_click("ArrowUp")}></img>
+            <img src="./images/arrow_skills.png" className={styles.group_arrows} id={styles.arrow_1} onClick={() => image_click("ArrowUp")}></img>
             <ul className={styles.list} ref={ref_list} tabIndex={0}>
                 {itens_currents.map( (item, index) => (
                         <li key={item.i}> <Hab path={item.src} alt={item.alt} index={index}>{item.description}</Hab> </li>
@@ -172,7 +172,7 @@ export default function Label_skills () {
             
                 )}
             </ul>
-            <img src="images/arrow_skills.png" className={styles.group_arrows} id={styles.arrow_2} onClick={() => image_click("ArrowDown")}></img>
+            <img src="./images/arrow_skills.png" className={styles.group_arrows} id={styles.arrow_2} onClick={() => image_click("ArrowDown")}></img>
         </>
         
     )
