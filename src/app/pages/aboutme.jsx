@@ -6,7 +6,7 @@ export default function Aboutme () {
         <section  id='aboutme'>
             <div className={styles.main}>
                 <div className={styles.box}>
-                    <img src="/images/foto_perfil3.jpeg" className={styles.profile_photo} alt="Foto de Vitor Moreira"></img>
+                    <img src="./images/foto_perfil3.jpeg" className={styles.profile_photo} alt="Foto de Vitor Moreira"></img>
                     <div className={styles.bloco_textos}>
                         <h2 className={styles.title}>Sobre mim</h2>
                         <div className={styles.line}></div>
