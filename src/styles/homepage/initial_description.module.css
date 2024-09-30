@@ -1,0 +1,243 @@
+
+.main {
+
+    width: 45%;
+    height: 80%;
+    margin: 10% 0px 0px 2%;
+    box-sizing: border-box;
+}
+
+.descricao_p1 {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
+
+@font-face {
+
+    font-family: alata;
+    src: url("../../fonts/Alata-Regular.ttf")
+}
+
+.text_p1 {
+    
+    display: inline-block;
+    font-family: alata;
+    color: #FFFFFF;
+    margin: 0% 0% 0% 2%;
+    font-size: clamp(1rem, 2.5vw, 60px);
+    width: 0;
+    border-right: 2.3px solid rgba(245, 245, 245, 0.747);
+    white-space: nowrap; /*não quer quebra de linha*/
+    overflow: hidden; /*se a largura n é suficiente, o que n couber vai estar escondido*/
+}
+
+.text_p2 {
+    
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0% 0% 0% 8%;
+    font-family: alata;
+    color: #FFFFFF;
+    font-size: clamp(6px, 1.35vw, 20px);
+    border-right: 2.3px solid transparent;
+    width: 0;
+    white-space: nowrap; /*não quer quebra de linha*/
+    overflow: hidden; /*se a largura n é suficiente, o que n couber vai estar escondido*/
+}
+
+.typing_animation_p1 {
+    animation: change_cursor 400ms/*velocidade que muda*/ infinite/*para sempre*/ normal/*a velocidade n muda e é normal*/, 
+    write_p1 2.4s steps(55)/*para ocorrer quebrar nesse total de quadros, por, para ficar como se fosse fotos que fazem um vídeo*/ 
+    1s/*delay(tempo q demora para começar*/ forwards normal/*velocidade normal e que n mude*/,  cursor 0s forwards 4s normal;
+}
+
+.typing_animation_p2 {
+    animation: write_p2 2.2s steps(55) 4.3s forwards normal, change_cursor 400ms infinite 4.3s normal;
+}
+
+@keyframes write_p2 {
+    0% {
+        width: 0;
+    }
+    99.5% {
+        width: clamp(80px, 20.17vw, 305px);
+    }
+    100% {
+        width: auto;
+    }
+}
+
+@keyframes cursor {
+    
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes write_p1 {
+    0% {
+        width: 0;
+    }
+    99.5% {
+        width: clamp(10vw, 21.3vw, 320px);
+    }
+    100% {
+        width: auto;
+    }
+}
+
+@keyframes change_cursor{
+
+    from {
+        border-right-color: rgba(245, 245, 245, 0.747);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.hi {
+    width: 6%;
+    height: 40%;
+    transform: rotate(0deg);
+}
+
+.animar_rotation {
+    animation: rotate 560ms forwards normal, 
+    rerotate_rotate 510ms 660ms forwards normal;
+}
+
+@keyframes rerotate_rotate {
+    
+    from {
+        transform: rotate(90deg);
+    } to {
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes rotate {
+    
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(90deg);
+    }
+
+}
+
+
+.line {
+    background-color: #56E7A4;
+    width: 0;
+    height: 3px;
+    margin: 2% 0% 2% 8%;
+    
+}
+
+.typing_animation_line {
+    animation: aumentar_line 0.4s 7s forwards normal;
+}
+
+@keyframes aumentar_line {
+    from {
+        width: 0;
+    }
+    to {
+        width: 47%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .main {
+        
+        width: 100%;
+        height: 60%;
+        order: 3;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }   
+    
+
+    .description_p1 {
+        
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1%;
+    }
+
+    .text_p1 {
+    
+        margin: 0;
+        font-size: clamp(10px, 150%, 40px);
+    }
+
+    .hi {
+
+        width: 8%;
+        height: 100%;
+    }
+    
+    .text_p2 {
+        
+        margin: 0 0 1% 0;
+        font-size: clamp(10px, 100%, 40px);
+    }
+
+    .line {
+
+        margin: 0 0 2% 0;
+    }
+
+    
+
+    @keyframes aumentar_line {
+        from {
+            width: 0;
+        }
+        to {
+            width: 70%;
+        }
+    }
+
+
+    @keyframes write_p1 {
+
+        0% {
+            width: 0;
+        }
+        99.5% {
+            width: clamp(50px, 55vw, 200px);
+        }
+        100% {
+            width: auto;
+        }
+    }
+
+    @keyframes write_p2 {
+
+        0% {
+            width: 0;
+        }
+        99.5% {
+            width: clamp(40px, 65vw, 240px);
+        }
+        100% {
+            width: auto;
+        }
+    }
+    
+}
+

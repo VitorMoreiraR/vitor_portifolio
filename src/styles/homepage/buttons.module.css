@@ -1,0 +1,97 @@
+.conjunto_botoes {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 47%;
+    margin: 0% 0% 0% 8%;
+    box-sizing: border-box;
+}
+
+@font-face {
+
+    font-family: alata;
+    src: url('../../fonts/Alata-Regular.ttf');
+}
+
+.botao_csv {
+
+    width: 0;
+    height: 30px;
+    background-color: #56E7A4;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.botao_csv p {
+   
+    color: #09101A;
+    font-family: alata;
+    font-size: clamp(8px, 85%, 13px);
+    margin: 0 3px 0 0;
+}
+
+.botao_csv img {
+    width: 11%;
+    height: 80%;
+}
+
+.botao_contact {
+
+    width: 0;
+    height: 30px;
+    background-color: #09101A;
+    color: #56E7A4;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.botao_contact a {
+
+    width: 100%;
+    height: 100%;
+    
+    font-family: alata;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(8px, 100%, 20px);
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit;        /* Herda a cor do elemento pai */
+}
+
+.animation_botoes {
+
+    animation: mover_botoes 0.4s 7s forwards normal;
+}
+
+@keyframes mover_botoes {
+    
+    from {
+        width: 0;
+        border: 0px solid #56E7A4;
+       
+    } 
+    to {
+        width: 45%;
+        border: 3px solid #56E7A4;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .conjunto_botoes {
+
+        margin: 0;
+    }
+
+    .conjunto_botoes {
+
+        width: 70%;
+    }
+}

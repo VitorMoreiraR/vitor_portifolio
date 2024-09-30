@@ -1,0 +1,102 @@
+.list {
+
+    margin-top: 2%;
+    width: 70%;
+    list-style-type: none; /*retirando as cracterísticas de lista*/
+    height: 40%;
+    overflow-y: scroll; /*colocando um scroll no elemento*/
+    scroll-behavior: smooth; /*ajuda na suavidade do scroll*/
+    padding: 0 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+
+    scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
+    -ms-overflow-style: none;  /* Oculta a barra de rolagem no IE e Edge */
+}
+
+/*Esse aqui só afeta o google, o firefox não*/
+.list::-webkit-scrollbar { /*para editar o scrollbar como um todo*/
+    display: none;
+}
+/*
+.list::-webkit-scrollbar-thumb { /*para editar a parte móvel
+
+    background-color: #FFFFFF; /* Cor do "polegar" 
+    border-radius: 10px; /* Bordas arredondadas 
+    border: 2px solid #000000; /* Borda ao redor do polegar 
+}
+
+.list::-webkit-scrollbar-track { /*para editar o fundo do scrollbar
+
+    background-color: #ff0909; /* Cor de fundo do trilho 
+    border-radius: 10px; /* Bordas arredondadas
+}
+*/
+
+.list li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.group_arrows {
+
+    display: none;
+}
+
+@media (max-width: 550px) {
+
+    .list {
+
+        height: 30%;
+        margin: 10% 0 10% 0;
+    }
+
+    .group_arrows {
+
+        height: 10%;
+        width: 20%;
+        display: block;
+    }
+    
+    #arrow_1 {
+
+        transform: rotate(270deg);
+    }
+
+    #arrow_2 {
+
+        transform: rotate(90deg);
+    }
+
+}
+
+
+@media (min-width: 550px) and (max-width: 1024px) {
+
+    .list {
+
+        height: 25%;
+        margin: 10% 0 10% 0;
+    }
+
+    .group_arrows {
+
+        height: 10%;
+        width: 15%;
+        display: block;
+    }
+    
+    #arrow_1 {
+
+        transform: rotate(270deg);
+    }
+
+    #arrow_2 {
+
+        transform: rotate(90deg);
+    }
+
+}

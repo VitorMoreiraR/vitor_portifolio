@@ -1,0 +1,168 @@
+.main {
+
+    width: 60%;
+    height: 90%;
+    margin-left: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: alata;
+    src: url('../../fonts/Alata-Regular.ttf');
+}
+
+.title {
+    font-size: clamp(10px, 150%, 60px);
+    margin: 0;
+    font-family: alata;
+    font-weight: bold;
+}
+
+.text {
+
+    font-size: clamp(10px, 100%, 15px);
+    font-family: alata;
+    text-align: justify;
+    width: 100%;
+    margin: 0 0 2% 0;
+}
+
+
+.group_buttons {
+
+    height: 15%;
+    width: 100%;
+    margin: 2% 0 0 0;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.without_buttons {
+
+    display: none;
+}
+
+.button_article {
+
+    display: none;
+}
+
+.button {
+
+    width: 34%;
+    height: 100%;
+
+    font-family: alata;
+
+    background-color: #56E7A4;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    padding: 5px 0px 2px 0px;
+    border: 0;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.button:active {
+
+    transition: 0.2s;
+    box-shadow: none;
+}
+
+
+.description {
+    height: 80%;
+    width: 100%;
+}
+
+@media (max-width: 550px) {
+
+    .main {
+        
+        width: 100%;
+        height: 60%;
+        margin: 4% 0 0 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .group_buttons {
+        
+        width: 100%;
+        height: 20%;
+        margin: 0 0 2% 0;
+        align-items: center;
+    }
+
+    .description {
+        height: 80%;
+        width: 100%;
+    }
+
+    .button {
+
+        width: 40%;
+        height: 80%;
+    }
+
+    .button:last-child {
+        
+        margin-right: 2%;
+    }
+
+    .text {
+
+        font-size: clamp(12px, 75%, 25px);
+        margin: 0;
+    }
+
+    .button_link {
+
+        display: flex;
+        justify-content: center;
+
+        
+    }
+    
+    .text_article {
+
+        margin: 12% 0 0 0;
+        text-align: center;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 1024px) {
+
+    .main {
+
+        justify-content: flex-start;
+    }
+
+
+
+    .description {
+        height: 80%;
+        width: 100%;
+    }
+    
+    .text {
+
+        font-size: clamp(10px, 80%, 15px);
+    }
+
+    
+}
