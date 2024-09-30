@@ -48,8 +48,8 @@ export default function Frames () {
 
                     <section className={ `${styles.f1} ${styles.frame}`}>
                         <div className={styles.bloco_image}>
-                            <img src="/images/portifolio_marca.png" className={styles.image_1}></img>
-                            <img src="/images/portifolio_tela.png" className={styles.image_2}></img>
+                            <img src="./images/portifolio_marca.png" className={styles.image_1} alt="imagem projeto"/>
+                            <img src="./images/portifolio_tela.png" className={styles.image_2} alt="imagem projeto"/>
                         </div>
                         <Data title = "Portifólio" left= "Modelagem" right = "Demo" have_buttons = "No" article = "No"> Portfólio desenvolvido para me apresentar e aprimorar minhas habilidades em desenvolvimento web.</Data>
                     </section>  
@@ -57,8 +57,8 @@ export default function Frames () {
                     <section className={ `${styles.f2} ${styles.frame}`}>
 
                         <div className={styles.bloco_image}>
-                            <img src="/images/signo_futsent.png" className={styles.image_1}></img>
-                            <img src="/images/Home_futsent.png" className={styles.image_2}></img>
+                            <img src="./images/signo_futsent.png" className={styles.image_1} alt="imagem projeto"/>
+                            <img src="./images/Home_futsent.png" className={styles.image_2} alt="imagem projeto"/>
                         </div>
                         <Data title = "FutSent" left= "Modelagem" right = "Demo" have_buttons = "No" article = "No"> Um sistema interativo capaz de averiguar se um time de futebol foi avaliado de forma mais positiva, negativa ou neutra por seus torcedores no youtube durante cada mês </Data>
                     </section>
@@ -67,7 +67,7 @@ export default function Frames () {
                     <section className={ `${styles.f3} ${styles.frame}`}>
 
                             <div className={styles.img_article}>
-                                    <img src="/images/logo_webmidia.png"></img>
+                                    <img src="./images/logo_webmidia.png" alt="imagem artigo"/>
                             </div>
                             <Data title = "Sentiment Analysis of Shared Content in Brazilian Reddit Communities: A Human Labeled Dataset" left= "link" right = "" have_buttons = "Yes" article = "Yes">
                                 <br/>

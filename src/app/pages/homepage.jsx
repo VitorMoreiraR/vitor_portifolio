@@ -8,7 +8,7 @@ export default function Homepage () {
             <div className={styles.homepage}>
                 <Initial_description></Initial_description>
                 <div className={styles.perfil}>
-                    <img src="/images/foto_perfil1.png" className={styles.foto_perfil}/>
+                    <img src="./images/foto_perfil1.png" className={styles.foto_perfil}/>
                 </div>
             </div>
         </section>

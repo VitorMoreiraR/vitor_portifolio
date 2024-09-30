@@ -8,7 +8,7 @@ export default function Initial_description () {
 
         <div className={styles.main}>
                 <div className={styles.description_p1}>
-                    <img src="/icons/ola_mao.svg" className={`${styles.hi} ${styles.animar_rotation}`}/>
+                    <img src="./icons/ola_mao.svg" className={`${styles.hi} ${styles.animar_rotation}`} alt="icon saudação"/>
                     <p className={`${styles.text_p1} ${styles.typing_animation_p1}`}>Olá! Eu sou o Vitor!</p>
                 </div>
                 <p className={`${styles.text_p2} ${styles.typing_animation_p2}`}>Sou um desenvolvedor full-stack!</p>

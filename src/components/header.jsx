@@ -37,14 +37,14 @@ export default function Header () {
 
         <header className={`${styles.header} ${corHeader == true? styles.header_transp:''}`}>
             <div className={styles.esquerdo}>
-                <img src="/images/icon.png" className={styles.v}></img>
+                <img src="./images/icon.png" className={styles.v}alt="logo"/>
                 <h1 className={`${styles.text} ${corHeader == true? styles.text_transp:''}`}>Portifólio</h1>
             </div>
             
             <nav className={styles.header_drop}>
                 <div className={styles.menu} >
-                    <img src={menuAtivo == "Ativo"? (corHeader == true? "/icons/seta-verde.png":"/icons/seta-branca.png"):(corHeader == true? "/icons/menu-verde.png":"/icons/menu-branco.png")} 
-                    onClick={() => fun_menuAtivo(menuAtivo == "Ativo"? "Desativado":"Ativo")}></img>
+                    <img src={menuAtivo == "Ativo"? (corHeader == true? "./icons/seta-verde.png":"./icons/seta-branca.png"):(corHeader == true? "./icons/menu-verde.png":"./icons/menu-branco.png")} 
+                    onClick={() => fun_menuAtivo(menuAtivo == "Ativo"? "Desativado":"Ativo")}alt="icon menu"/>
                 </div>
                 <div className={`${styles.itens} ${menuAtivo ? (menuAtivo == "Ativo" ? styles.ani : styles.aniEsconde) : ""}`}
                 >

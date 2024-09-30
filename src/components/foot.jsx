@@ -10,7 +10,7 @@ export default function foot () {
                 <p className={styles.name}>Vitor Moreira</p>
 
                 <div className={styles.email}>
-                <a href="mailto:vitorrafael20111@gmail.com" title="email" target="_blank"><img src="/icons/email.svg"/></a>
+                <a href="mailto:vitorrafael20111@gmail.com" title="email" target="_blank"><img src="./icons/email.svg" alt="icon email"/></a>
                     <p>vitorrafael20111@gmail.com</p>
                 </div>
                 
@@ -18,8 +18,8 @@ export default function foot () {
 
             <div className={styles.icons}>
                 
-               <a href="https://www.linkedin.com/in/vitor-moreira-ramos-de-rezende-a231a4228/" title="Página do Linkedin" target="_blank"><img src="/icons/linkedin.svg" alt="icon Linkedin"/></a>
-               <a href="https://github.com/VitorMoreiraR" title="Página do GitHub" target="_blank"><img src="/icons/github.svg" alt="icon Linkedin"/></a>
+               <a href="https://www.linkedin.com/in/vitor-moreira-ramos-de-rezende-a231a4228/" title="Página do Linkedin" target="_blank"><img src="./icons/linkedin.svg" alt="icon Linkedin"/></a>
+               <a href="https://github.com/VitorMoreiraR" title="Página do GitHub" target="_blank"><img src="./icons/github.svg" alt="icon Linkedin"/></a>
             
             </div>
 
