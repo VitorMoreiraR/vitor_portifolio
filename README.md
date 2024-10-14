@@ -12,23 +12,19 @@ O portfólio está disponível publicamente no seguinte endereço:
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **Next.js**: Framework React que permite renderização do lado do servidor e construção de sites otimizados para SEO.
-- **JavaScript**: Linguagem de programação utilizada para adicionar interatividade e lógica à aplicação.
-- **HTML**: Linguagem de marcação para estruturar o conteúdo das páginas.
-- **CSS**: Linguagem de estilos para definir a aparência e o layout do site.
-
-## Objetivos do Projeto
-
-O principal objetivo deste projeto é aplicar e expandir meus conhecimentos em desenvolvimento web, e também criar um protifólio pessoal para mostrar minhas habilidades.
+- **React**
+- **Next.js**
+- **JavaScript**
+- **HTML**
+- **CSS**
 
 ## Estrutura do Projeto
 
 O portfólio é dividido em várias seções, incluindo:
-- **Início**: Apresentação pessoal com foto e introdução.
+- **Início**: apresentação pessoal com foto e introdução.
 - **Sobre mim**: texto explicativo sobre mim.
 - **Habilidades**: lista de habilidades que possuo.
-- **Projetos e Artigos**: Descrição dos projetos que desenvolvi e artigos que participei.
+- **Projetos e Artigos**: descrição dos projetos que desenvolvi e artigos que participei.
 
 ## Contato
 
