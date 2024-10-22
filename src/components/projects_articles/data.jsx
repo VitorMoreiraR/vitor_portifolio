@@ -11,7 +11,7 @@ export default function data (props) {
             </div>
            
             <div className={`${styles.group_buttons} ${props.have_buttons === "No"? styles.without_buttons:''} ${props.article === "No"? "":styles.button_link}`} >
-                <button className= {`${styles.button}`} >{props.left}</button>
+                 <button className= {`${styles.button}`} onClick={() => (window.open(props.click_left, '_blank'))} >{props.left}</button>
                 <button className={props.article === "No"? styles.button:styles.button_article}>{props.right}</button>
             </div>
         </div>
