@@ -3,7 +3,7 @@ export default function RootLayout({ children }) {
 
     
     <>
-      <link rel="icon" href="/images/icon.png" type="image/png" /> 
+      <link rel="icon" href="./images/icon.png" type="image/png" /> 
       <meta charSet="UTF-8" />
       <title>Portifório Vitor</title>
       <html lang="pt-br">
