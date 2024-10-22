@@ -6,17 +6,19 @@ import Hab from "./hab";
 export default function Label_skills () {
 
     const items_list = [ //todas as habilidades
-        { i: 0, src: "./icons/js.svg", alt: "Logo do Javascript", description: "Javascript"},
+        { i: 0, src: "./icons/cplusplus.svg", alt: "Logo do C++", description: "C++"},
         { i: 1, src: "./icons/python.svg", alt: "Logo do Python", description: "Python"},
-        { i: 2, src: "./icons/sql.svg", alt: "Logo do sql", description: "SQL"},
-        { i: 3, src: "./icons/html.svg", alt: "Logo do HTML", description: "HTML"},
-        { i: 4, src: "./icons/css.svg", alt: "Logo do CSS",  description: "CSS"},
-        { i: 5, src: "./icons/react.svg", alt: "Logo do React", description: "React"},
-        { i: 6, src: "./icons/figma.svg", alt: "Logo do figma", description: "Figma"}
+        { i: 2, src: "./icons/js.svg", alt: "Logo do Javascript", description: "Javascript"},
+        { i: 3, src: "./icons/sql.svg", alt: "Logo do sql", description: "SQL"},
+        { i: 4, src: "./icons/html.svg", alt: "Logo do HTML", description: "HTML"},
+        { i: 5, src: "./icons/css.svg", alt: "Logo do CSS",  description: "CSS"},
+        { i: 6, src: "./icons/react.svg", alt: "Logo do React", description: "React"},
+        { i: 7, src: "./icons/figma.svg", alt: "Logo do figma", description: "Figma"},
+        { i: 8, src: "./icons/excel.svg", alt: "Logo do Excel", description: "Excel"}
     ];
 
     const [itens_currents, fun_itens_currents] = useState([ //habilidades mostradas na tela
-        ...items_list.slice(5,7),
+        ...items_list.slice(7,9),
         ...items_list.slice(0,3)
     ]);
 
@@ -71,11 +73,11 @@ export default function Label_skills () {
             const current_itens_currents = ref_itens_currents.current //pegando as habilidades currents(estado atual)
 
             if (tipo == "Up") {
-                const i = current_itens_currents[0].i === 0? 6: current_itens_currents[0].i - 1;
+                const i = current_itens_currents[0].i === 0? 8: current_itens_currents[0].i - 1;
                 fun_itens_currents([items_list[i], ...current_itens_currents.slice(0,4)]);
                
             } else if (tipo == "Down") {
-                const i = current_itens_currents[4].i === 6? 0: current_itens_currents[4].i + 1;
+                const i = current_itens_currents[4].i === 8? 0: current_itens_currents[4].i + 1;
                 fun_itens_currents([...current_itens_currents.slice(1,5), items_list[i]]);
                
             }
