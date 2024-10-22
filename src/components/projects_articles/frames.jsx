@@ -60,7 +60,7 @@ export default function Frames () {
                             <img src="./images/signo_futsent.png" className={styles.image_1} alt="imagem projeto"/>
                             <img src="./images/Home_futsent.png" className={styles.image_2} alt="imagem projeto"/>
                         </div>
-                        <Data title = "FutSent" left= "Modelagem" right = "Demo" have_buttons = "No" article = "No"> Um sistema interativo capaz de averiguar se um time de futebol foi avaliado de forma mais positiva, negativa ou neutra por seus torcedores no youtube durante cada mês </Data>
+                        <Data title = "FutSent" left= "Modelagem" right = "Demo" have_buttons = "No" article = "No"> Um sistema interativo capaz de averiguar se um time de futebol foi avaliado de forma mais positiva, negativa ou neutra por seus torcedores no youtube durante cada mês. </Data>
                     </section>
 
                     
@@ -69,9 +69,9 @@ export default function Frames () {
                             <div className={styles.img_article}>
                                     <img src="./images/logo_webmidia.png" alt="imagem artigo"/>
                             </div>
-                            <Data title = "Sentiment Analysis of Shared Content in Brazilian Reddit Communities: A Human Labeled Dataset" left= "link" right = "" have_buttons = "Yes" article = "Yes">
+                            <Data title = "Sentiment Analysis of Shared Content in Brazilian Reddit Communities: A Human Labeled Dataset" left= "link" right = "" have_buttons = "Yes" article = "Yes" click_left="https://sol.sbc.org.br/index.php/webmedia/article/view/30297">
                                 <br/>
-                                    <strong>Participação na elaboração!</strong> 
+                                    <strong>Eu participei da elaboração!</strong> 
                                 <br/>
                                 
                             </Data>
