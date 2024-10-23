@@ -21,13 +21,23 @@
     height: 30px;
     background-color: #56E7A4;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
 }
 
-.botao_csv p {
+.botao_csv a {
+
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.botao_csv a > p {
    
     color: #09101A;
     font-family: alata;
@@ -35,7 +45,7 @@
     margin: 0 3px 0 0;
 }
 
-.botao_csv img {
+.botao_csv a > img {
     width: 11%;
     height: 80%;
 }
