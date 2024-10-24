@@ -10,7 +10,7 @@ export default function Buttons () {
                     <img src="./icons/baixar.svg" alt="icone baixar"/>
                 </a>
             </div>
-            <div className={`${styles.botao_contact} ${styles.animation_botoes}`}><a href="mailto:vitorrafael20111@gmail.com" title="email" target="_blank">Contatar</a></div>
+            <div className={`${styles.botao_contact} ${styles.animation_botoes}`}><a href="mailto:vitormoreira2r@gmail.com" title="email" target="_blank">Contatar</a></div>
         </div>
     )
 
