@@ -10,7 +10,7 @@ export default function foot () {
                 <p className={styles.name}>Vitor Moreira</p>
 
                 <div className={styles.email}>
-                <a href="mailto:vitorrafael20111@gmail.com" title="email" target="_blank"><img src="./icons/email.svg" alt="icon email"/></a>
+                <a href="mailto:vitormoreira2r@gmail.com" title="email" target="_blank"><img src="./icons/email.svg" alt="icon email"/></a>
                     <p>vitorrafael20111@gmail.com</p>
                 </div>
                 
