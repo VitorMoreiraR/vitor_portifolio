@@ -11,7 +11,7 @@ export default function foot () {
 
                 <div className={styles.email}>
                 <a href="mailto:vitormoreira2r@gmail.com" title="email" target="_blank"><img src="./icons/email.svg" alt="icon email"/></a>
-                    <p>vitorrafael20111@gmail.com</p>
+                    <p>vitormoreira2r@gmail.com</p>
                 </div>
                 
             </div>
