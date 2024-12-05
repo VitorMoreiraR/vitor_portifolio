@@ -92,32 +92,7 @@ export default function Label_skills () {
                 alterar_lista(e.key === "ArrowUp" ? "Up" : "Down");
                 requestAnimationFrame(() => {
                     element_list.scrollTo(0, change_scroll);
-                }); /**O requestAnimationFrame é uma função importante no contexto de animações e atualizações visuais em navegadores. Ela ajuda a sincronizar a execução de uma função com o ciclo de renderização do navegador, garantindo que as alterações visuais sejam feitas no momento ideal. Vamos entender por que essa abordagem fez o seu código funcionar corretamente.
-                O Problema Original
-                
-                Quando você atualiza o estado do React usando fun_itens_currents, o React primeiro atualiza o estado internamente e, em seguida, dispara um ciclo de re-renderização do componente para refletir as mudanças na interface do usuário (UI). Esse processo não é instantâneo e, devido à natureza assíncrona do React, a UI pode não estar completamente atualizada no momento em que você tenta ajustar o scrollTop.
-                O Papel do requestAnimationFrame
-                
-                O requestAnimationFrame solicita ao navegador que execute uma função específica antes do próximo repaint (repaint é o processo onde o navegador desenha novamente a UI após mudanças). Aqui está por que isso faz diferença:
-                
-                    Sincronização com o Repaint:
-                        Quando você usa requestAnimationFrame, você está essencialmente pedindo ao navegador para executar a função passada a ele na próxima vez que ele for redesenhar a tela. Isso significa que a função só será executada depois que todas as mudanças de layout e estado pendentes tiverem sido aplicadas.
-                
-                    Garantia de Atualização Completa:
-                        Como a função passada para requestAnimationFrame é chamada no momento ideal, depois que o layout do DOM (Document Object Model) foi atualizado, o element_list.scrollTo(0, 50); é aplicado quando a lista já foi atualizada com os novos itens e está pronta para ser exibida corretamente.
-                
-                    Evitar Conflitos de Atualização:
-                        Sem requestAnimationFrame, se você tenta definir scrollTop imediatamente após a mudança de estado, há o risco de que o navegador ainda esteja processando as mudanças de layout e sua chamada seja aplicada em um momento não ideal, resultando em um comportamento inconsistente.
-                
-                    Melhoria de Desempenho:
-                        Além disso, requestAnimationFrame otimiza o desempenho, pois garante que as alterações sejam aplicadas de forma eficiente, em sincronia com a taxa de atualização da tela, evitando cálculos desnecessários ou fora de tempo.
-                
-                Como Isso Resolveu o Problema
-                
-                Ao envolver element_list.scrollTo(0, 50); dentro de requestAnimationFrame, você garantiu que essa operação de rolagem fosse realizada no momento certo, ou seja, depois que o navegador já tivesse processado todas as mudanças de layout necessárias. Isso evitou que a rolagem fosse aplicada muito cedo (antes da interface estar pronta), o que estava causando o comportamento inesperado.
-                
-                Essa técnica é especialmente útil em cenários onde as mudanças de layout e as operações de DOM precisam ser coordenadas de maneira precisa, garantindo que todas as alterações sejam refletidas corretamente na UI sem conflitos ou inconsistências. */
-               
+                }); 
             }
         } 
 
@@ -131,7 +106,6 @@ export default function Label_skills () {
             const speed_scroll = value_speed;
             const delta = e.deltaY * speed_scroll; //e.deltaY o quão o usuário quis mover o scroll
             element_list.scrollTo(0,  element_list.scrollTop + delta);
-            console.log(`------------------------------${element_list.scrollTop} ${change_scroll}`)
         }
 
         function manipulate_list_wheel () { //manipular as setas do teclado e criando o scroll "infinito"
